@@ -3,3 +3,4 @@ Negro
 Blanco
 Rojo
 Verde
+Morado
