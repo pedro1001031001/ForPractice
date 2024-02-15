@@ -1,0 +1,1 @@
+cantidad de manzanas+ flotat(input("ingresa )
