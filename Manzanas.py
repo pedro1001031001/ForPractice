@@ -1,18 +1,20 @@
-cantidad = 69
-precio = 20
-numero1 = 0
-numero2 = 0
-kkdeperro =0
+cantidad : int = 0
+precio : float = 0
+pago : float = 0
+descuento : float = 0
 
-#rint("Hola")
-#print("Vas a pagar")
-#print(cantidad * precio)
+cantidad = float(input("1. Ingresa numero de piezas vendidas: "))
+precio = float(input("2. Introduzca el precio de las amnzana: "))
 
-numero1 = int(input("1. Ingresa numero de piezas vendidas: "))
-numero1 = int(numero1)
-numero2 = int(input("2. Introduzca el precio de las amnzana: "))
-numero2 = int(numero2)
 
-kkdeperro= (numero1 * numero2)
+pago = (precio * cantidad)
 
-print(kkdeperro)
+
+if cantidad >= 10 :
+    descuento = pago * 0.1
+    pago = pago - descuento
+    print(f"Se pago {pago} a la cual ya se le aplico en descuento en monto de {descuento}")
+
+if cantidad < 10 :
+    print(f"Se pago  {pago}")
+
