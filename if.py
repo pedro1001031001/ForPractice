@@ -6,7 +6,7 @@ eresNarco = "Si"
 if edad >= 18 and esEstudiante =="Si" or dinero >= 500 :
     print("Puede entrar")
     print("Gasta mucho")
-elif eresNarco == "Si"
+elif eresNarco == "Si" :
     print("Puede pasar")
 else :
     print("Adios")
