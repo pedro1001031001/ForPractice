@@ -13,5 +13,7 @@ print("")
 #   Proceso y salida de los datos
 if año % 4 == 0 :
     print("Es bisiesto")
-if año % 100 != 0 :
+elif año % 4 and año % 100 != 0 :
+    print("")
+elif año % 100 != 0 :
     print("No es bisiesto")
