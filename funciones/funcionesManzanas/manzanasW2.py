@@ -1,4 +1,4 @@
-import funciones.funcionesManzanas.m_Descuento as m_Descuento
+import m_Descuento
 import clearScreen
 
 cantidad : int = 1
