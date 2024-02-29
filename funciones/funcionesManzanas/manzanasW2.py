@@ -1,4 +1,5 @@
-import mW2_f
+import funciones.funcionesManzanas.m_Descuento as m_Descuento
+import clearScreen
 
 cantidad : int = 1
 precio : float = 0
@@ -18,21 +19,22 @@ while cantidad != 0 :
     cantidad = float(input("1. Ingresa numero de piezas vendidas: "))
     
     if cantidad == 0 :
+        clearScreen.borrarpantalla()
         break
     
-    precio = float(input("2. Introduzca el precio de las amnzana: "))
+    precio = float(input("2. Introduzca el precio de las : "))
     print("")
     
     pago = (precio * cantidad)
+    descuento = m_Descuento.descuento(pago, cantidad)
+    Pago = pago - descuento
     
-    mW2_f.descuento(pago, cantidad)
-    
+    print(f"Se pago  {pago}")
     cantidad = int(input("¿quieres salir (introduce un 0):    "))
 
 
-
-
 print("¡Adios!")
+clearScreen.borrarpantalla()
 
 
 
