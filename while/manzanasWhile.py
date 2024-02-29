@@ -10,9 +10,14 @@ print("Este programa determina el monto a cobrar por x cantidad de manzanas vend
 print("")
 
 
-cantidad = float(input("1. Ingresa numero de piezas vendidas: "))
     
 while cantidad != 0 :
+    
+    cantidad = float(input("1. Ingresa numero de piezas vendidas: "))
+    
+    if cantidad == 0 :
+        break
+    
     precio = float(input("2. Introduzca el precio de las amnzana: "))
     print("")
     pago = (precio * cantidad)
@@ -32,7 +37,7 @@ while cantidad != 0 :
         print("Gracias por su compra.")
         print("")
     
-    opcion = int(input("¿quieres salir (introduce un 1):    "))
+    cantidad = int(input("¿quieres salir (introduce un 0):    "))
 
 
 
