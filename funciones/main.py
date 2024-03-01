@@ -1,5 +1,5 @@
 import funciones
-import clearScreen
+import funciones.funcionesManzanas.clearScreen as clearScreen
 
 
 total = funciones.sum(3,3)
