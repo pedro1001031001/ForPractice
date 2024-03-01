@@ -32,9 +32,9 @@ while cantidad != 0 :
     print(f"Se pago  {pago}")
     cantidad = int(input("¿quieres salir (introduce un 0):    "))
 
-
-print("¡Adios!")
 clearScreen.borrarpantalla()
+print("¡Adios!")
+
 
 
 
