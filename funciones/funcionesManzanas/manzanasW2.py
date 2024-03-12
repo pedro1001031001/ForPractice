@@ -9,7 +9,7 @@ descuentoSecreto : float = 0
 opcion = 1
 
 print("")
-print("Este programa determina el monto a cobrar por x cantidad de frutas vendidas a un precio dado.")
+print("Este programa determina el monto a cobrar por x cantidad de frutas y verduras vendidas a un precio dado.")
 print("")
 
 
@@ -22,7 +22,7 @@ while cantidad != 0 :
         clearScreen.borrarpantalla()
         break
     
-    precio = float(input("2. Introduzca el precio de las : "))
+    precio = float(input("2. Introduzca el precio de las frutas o verduras: "))
     print("")
     
     pago = (precio * cantidad)
