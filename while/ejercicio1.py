@@ -13,4 +13,4 @@ while n != 0 :
         clearScreen.borrarpantalla()
     
     if n == 0 :
-        print("Has decidido salir. Gracias por usar el programa")    
+        print("Has decidido salir. Gracias por usar el programa.")    
