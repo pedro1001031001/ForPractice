@@ -1,13 +1,13 @@
 import clearScreen
 
-n : int = 0
+n : int = -1
 i : int = 0
 
 print()
 print("Este programa solicita valores enteros entre 0 y 20, y cuenta las veces que se ha introducido un valor.")
 print()
 
-while n >= 20 & n <= 0 :
+while n <  0 | n > 20 :
     n = int(input("1.   Introduce un número enteros menor a 10: "))
     i = i + 1
     
