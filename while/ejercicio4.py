@@ -17,5 +17,6 @@ while n >= 20 & n <= 0 :
 if n >= 0 & n <= 20: 
     clearScreen.borrarpantalla()        
     print(f"El número tecleado es {n}.")
+    print(f"Se introdujo {i} valores.")
     print()
 
