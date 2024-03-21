@@ -1,7 +1,12 @@
-SELECT country.Name, country.Continent, countrylanguage.`Language`, countrylanguage.IsOfficial, city.Name, city.District
-FROM country
-LEFT JOIN countrylanguage ON country.code = countrylanguage.CountryCode
-LEFT JOIN city ON country.Capital = city.ID
-WHERE country.name = "mexico"
+SELECT ct.Name, ct.Continent, cl.`Language`, cl.IsOfficial, cy.Name, cy.District
+FROM country ct
+LEFT JOIN countrylanguage cl ON ct.code = cl.CountryCode
+LEFT JOIN cy ON ct.Capital = cy.ID
+WHERE ct.name = "mexico"
 
 /* llave primaria */
+SELECT ct.Name AS "Nombre del país", ct.Continent AS "Continente", cl.`Language`, cl.IsOfficial, cy.Name, cy.District
+FROM country ct
+LEFT JOIN countrylanguage cl ON ct.code = cl.CountryCode
+LEFT JOIN city cy ON ct.Capital = cy.ID
+WHERE ct.name = "mexico"
