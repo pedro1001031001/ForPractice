@@ -1,0 +1,3 @@
+DELETE	FROM	city
+WHERE id = "4068"
+
