@@ -1,0 +1,25 @@
+Usuarios
+ - id
+ - nombre
+ - contraseña
+ - correo
+ - telefono
+ - 
+
+Productos
+ - Sabor
+ - Precio
+ - Tamaño
+ - Calidad
+
+inventario
+ - id producto
+ - piezas
+
+clinetes
+ - nombre
+ - domicilio
+ - telefono
+ - RFC
+ - 
+
