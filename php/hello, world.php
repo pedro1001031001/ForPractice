@@ -1,7 +1,8 @@
 <?php
     
     //  Hola munda
-    echo "hola, PHP";
+    echo "hola, PHP.";
+
     /*
         Esto es un comentario de varias líneas
     */
@@ -10,6 +11,5 @@
     $my_string = "Esto es una cadena de texto";
 
     echo $my_string;
-
 ?>
 
