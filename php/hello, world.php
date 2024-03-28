@@ -98,10 +98,29 @@
         echo "El valor no es 11 \n";
     }
 
-    function print_number(){
-        echo "10" . "\n";
+    function print_number(int $my_number){
+        echo $my_number . "\n";
     }
 
-    print_number();
+    print_number(10.5);
+    print_number(11);
+    print_number(12);
+
+    class MyClass{
+        public $name;
+        public $age;
+
+        function __construct($name, $age){
+            $this -> name = $name;
+            $this -> age = $age;
+        }
+    }
+
+    $my_class = new MyClass("Pedro", 21);
+    print_r($my_class);
+    echo $my_class -> name . "\n";
+    $my_class -> name = "Damian";
+    echo $my_class -> name . "\n";
+    
 ?>
 
