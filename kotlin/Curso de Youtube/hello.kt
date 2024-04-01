@@ -61,14 +61,81 @@ fun main(){
         //val myConst = "Mi propiedad constante"
 
     //  Estructura de control
-    myInt = 48
-    myString = "Hola"
+    myInt = 11
+    myString = "PedroDev"
 
-    if (myInt == 11 && myString == "Hola"){
-        println("El vlaor es 11")
-    } else if (myInt == 10){
-        println("El vlaor es 10")
+    if (myInt == 10 && myString == "Hola"){
+        println("El valor es 10")
+    } else if (myInt == 11 || myString == "Hola"){
+        println("El valor es 11")
     }else {
-        println("El valor es distinto de 11")
+        println("El valor ni es 10 ni 11.")
     }
+
+    //  Estructuras
+    var myList = mutableListOf<String>("Pedro", "Aguilar", "Rodríguez")
+    println(myList[1])
+    myList.add("Pedro")
+    println(myList)
+
+    //      sets
+    var mySet = setOf("Pedro", "Aguilar","Rodríguez","Pedro")
+    println(mySet)
+
+    //      Mapas
+    //  Estructura que permite diferentes tipos
+    var myMap = mutableMapOf("Pedro" to 36, "Aguilar" to 31, "Rodríguez" to 81)
+    myMap["Damian"] = 80
+    println(myMap["Pedro"])
+
+    //  Bucles
+    for (value in myList){
+        println(value)
+    }
+
+    for (value in mySet){
+        println(value)
+    }
+
+    for (value in myMap){
+        println(value)
+    }
+
+    var myCounter = 0
+    
+    while(myCounter < myList.count()){
+        println(myList[myCounter])
+        myCounter ++
+        myFunction()
+    }
+
+    //  opcionales
+    var myOpcional : String? = null
+    myOpcional = "Mi cadena de texto opcional"
+    println(myOpcional)
+
+    //  Funciones
+    myFunction()
+
+    //  Clases
+    var MyClass = MyClass("Pedro",21)
+    println(MyClass.age)
+    MyClass.myFunction()
+
+    //  Interpolación de datos
+    println("Este es el valor de la variable myInt: $myInt")
+}
+
+//  Funciones
+    fun myFunction(){
+        println("Esto es una función")
+    }
+
+//  Clases 
+class MyClass (val name : String, val age : Int){
+
+    fun myFunction(){
+        println("Esto es una función en una clase.")
+    }
+
 }
